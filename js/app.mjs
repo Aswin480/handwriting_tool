@@ -82,10 +82,24 @@ const EVENT_MAP = {
         e.target.value + 'px';
     }
   },
+  '#bottom-padding': {
+    on: 'change',
+    action: (e) => {
+      document.querySelector('.page-a .paper-content').style.paddingBottom =
+        e.target.value + 'px';
+    }
+  },
   '#left-padding': {
     on: 'change',
     action: (e) => {
       document.querySelector('.page-a .paper-content').style.paddingLeft =
+        e.target.value + 'px';
+    }
+  },
+  '#right-padding': {
+    on: 'change',
+    action: (e) => {
+      document.querySelector('.page-a .paper-content').style.paddingRight =
         e.target.value + 'px';
     }
   },
